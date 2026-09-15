@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{edfac803-595d-47f5-af35-329be95a0f49}</ProjectGuid>
+    <RootNamespace>RenderForge</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;libs\glfw-3.4.bin.WIN64\include;libs\glm-master;libs\glew-2.1.0\include;libs\soil\include;libs\stb;libs\include;libs\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>libs\glew-2.1.0\lib\Release\x64;libs\glfw-3.4.bin.WIN64\lib-vc2022;libs\soil\lib-vc2012\Platform_x64;libs\assimp\lib\x64\v140\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glfw3.lib;glew32.lib;SOIL.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4075,4098,4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;libs\glfw-3.4.bin.WIN64\include;libs\glm-master;libs\glew-2.1.0\include;libs\soil\include;libs\stb;libs\include;libs\assimp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/ignore:4099,4098,4075 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>libs\glew-2.1.0\lib\Release\x64;libs\glfw-3.4.bin.WIN64\lib-vc2022;libs\soil\lib-vc2012\Platform_x64;libs\assimp\lib\x64\v140\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glfw3.lib;glew32.lib;SOIL.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\Application.cpp" />
+    <ClCompile Include="src\core\Callback.cpp" />
+    <ClCompile Include="src\core\Camera.cpp" />
+    <ClCompile Include="src\core\main.cpp" />
+    <ClCompile Include="src\core\Scene.cpp" />
+    <ClCompile Include="src\objects\Firefly.cpp" />
+    <ClCompile Include="src\rendering\Material.cpp" />
+    <ClCompile Include="src\rendering\ShaderLoader.cpp" />
+    <ClCompile Include="src\rendering\ShaderProgram.cpp" />
+    <ClCompile Include="src\rendering\VAO.cpp" />
+    <ClCompile Include="src\rendering\VBO.cpp" />
+    <ClCompile Include="src\objects\Bush.cpp" />
+    <ClCompile Include="src\objects\ModelAssimp.cpp" />
+    <ClCompile Include="src\objects\Plain.cpp" />
+    <ClCompile Include="src\objects\SkyCube.cpp" />
+    <ClCompile Include="src\objects\Sphere.cpp" />
+    <ClCompile Include="src\objects\Tree.cpp" />
+    <ClCompile Include="src\lights\DirectionalLight.cpp" />
+    <ClCompile Include="src\lights\Light.cpp" />
+    <ClCompile Include="src\lights\PointLight.cpp" />
+    <ClCompile Include="src\lights\SpotLight.cpp" />
+    <ClCompile Include="src\transformations\DynamicRotation.cpp" />
+    <ClCompile Include="src\transformations\Rotation.cpp" />
+    <ClCompile Include="src\transformations\Scale.cpp" />
+    <ClCompile Include="src\transformations\Transformation.cpp" />
+    <ClCompile Include="src\transformations\Translation.cpp" />
+    <ClCompile Include="src\patterns\Subject.cpp" />
+    <None Include="src\data\bush.model" />
+    <None Include="src\data\plain.model" />
+    <None Include="src\data\skycube.model" />
+    <None Include="src\data\sphere.model" />
+    <None Include="src\data\tree.model" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\Application.h" />
+    <ClInclude Include="src\core\Callback.h" />
+    <ClInclude Include="src\core\Camera.h" />
+    <ClInclude Include="src\core\Scene.h" />
+    <ClInclude Include="src\objects\Firefly.h" />
+    <ClInclude Include="src\rendering\Material.h" />
+    <ClInclude Include="src\rendering\ShaderLoader.h" />
+    <ClInclude Include="src\rendering\ShaderProgram.h" />
+    <ClInclude Include="src\rendering\VAO.h" />
+    <ClInclude Include="src\rendering\VBO.h" />
+    <ClInclude Include="src\objects\Bush.h" />
+    <ClInclude Include="src\objects\DrawableObject.h" />
+    <ClInclude Include="src\objects\ModelAssimp.h" />
+    <ClInclude Include="src\objects\Plain.h" />
+    <ClInclude Include="src\objects\SkyCube.h" />
+    <ClInclude Include="src\objects\Sphere.h" />
+    <ClInclude Include="src\objects\Tree.h" />
+    <ClInclude Include="src\lights\DirectionalLight.h" />
+    <ClInclude Include="src\lights\Light.h" />
+    <ClInclude Include="src\lights\PointLight.h" />
+    <ClInclude Include="src\lights\SpotLight.h" />
+    <ClInclude Include="src\transformations\BasicTransformation.h" />
+    <ClInclude Include="src\transformations\DynamicRotation.h" />
+    <ClInclude Include="src\transformations\Rotation.h" />
+    <ClInclude Include="src\transformations\Scale.h" />
+    <ClInclude Include="src\transformations\Transformation.h" />
+    <ClInclude Include="src\transformations\Translation.h" />
+    <ClInclude Include="src\patterns\Observer.h" />
+    <ClInclude Include="src\patterns\Subject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\assimp.frag" />
+    <None Include="shaders\assimp.vert" />
+    <None Include="shaders\blinn.frag" />
+    <None Include="shaders\blinn.vert" />
+    <None Include="shaders\constant.frag" />
+    <None Include="shaders\constant.vert" />
+    <None Include="shaders\fragmentShader.frag" />
+    <None Include="shaders\lambert.frag" />
+    <None Include="shaders\lambert.vert" />
+    <None Include="shaders\phong.frag" />
+    <None Include="shaders\phong.vert" />
+    <None Include="shaders\skycube.frag" />
+    <None Include="shaders\skycube.vert" />
+    <None Include="shaders\texture.frag" />
+    <None Include="shaders\texture.vert" />
+    <None Include="shaders\vertexShader.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
