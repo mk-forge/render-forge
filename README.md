@@ -41,10 +41,10 @@ RenderForge is a custom C++ OpenGL renderer I built as a project for my computer
 
 ## Screenshots
 
-![Forest scene](./Screenshots/forest.png)
-![Spotlight effect](./Screenshots/spotlight.png)
-![Spheres scene](./Screenshots/spheres.png)
-![Planets scene](./Screenshots/planets.png)
+![Forest scene](https://raw.githubusercontent.com/mk-forge/render-forge/main/Screenshots/forest.png)
+![Spotlight effect](https://raw.githubusercontent.com/mk-forge/render-forge/main/Screenshots/spotlight.png)
+![Spheres scene](https://raw.githubusercontent.com/mk-forge/render-forge/main/Screenshots/spheres.png)
+![Planets scene](https://raw.githubusercontent.com/mk-forge/render-forge/main/Screenshots/planets.png)
 
 ## Installation
 
