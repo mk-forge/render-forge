@@ -1,5 +1,10 @@
 # RenderForge
 
+![C%2B%2B](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white)
+![GLSL](https://img.shields.io/badge/GLSL-5586A4)
+![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?logo=opengl&logoColor=white)
+![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?logo=sonarqube&logoColor=white)
+
 A C++ OpenGL renderer with three demo scenes, multiple shading models, light types and day/night skyboxes.
 
 ## Overview
@@ -60,3 +65,7 @@ Open `RenderForge.sln` in Visual Studio and build the project. Required librarie
 
 - [The Blender Cubemap Skybox Pack](https://drive.google.com/file/d/1V0KlEOLKjjEUAlfCeCxpo-6d4A6tWrdy/view?usp=sharing) by ZGnosis. Free for non-commercial use with attribution.
 - [Lowpoly Firefly model](https://skfb.ly/pzZAB) by Caledhril. Licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+
+## License
+
+[MIT](LICENSE)
