@@ -1,9 +1,8 @@
 # RenderForge
 
-![C%2B%2B](https://img.shields.io/badge/C%2B%2B-00599C?logo=cplusplus&logoColor=white)
-![GLSL](https://img.shields.io/badge/GLSL-5586A4)
+![C%2B%2B](https://img.shields.io/badge/C%2B%2B-0180CD?logo=cplusplus&logoColor=white)
 ![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?logo=opengl&logoColor=white)
-![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?logo=sonarqube&logoColor=white)
+![SonarQube](https://img.shields.io/badge/SonarQube-549DD0?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTEzLjE5IDEyNS45MzhoLTcuMTZDMTA2LjAzIDY4LjI5MyA1OC40NjQgMjEuMzk2IDAgMjEuMzk2di03LjE2MWM2Mi40MTYgMCAxMTMuMTkgNTAuMTA2IDExMy4xOSAxMTEuNzAzWm00Ljk1Mi0zOC40NDFjLTguNTk4LTM2LjE1MS0zNy44OTgtNjYuMzYyLTc0LjYyMy03Ni45MDNsMS42NDctNS43MzVjMzguNzYzIDExLjEzMyA2OS43MDIgNDMuMDI3IDc4Ljc3OCA4MS4yNTdabTUuNTA0LTMzLjk0MmMtOC44NTQtMTkuMzA5LTIzLjk0NC0zNi4xNDYtNDIuNDgtNDcuNDExbDIuNDgyLTQuMDgyQzEwMi45OTIgMTMuODE5IDExOC43NCAzMS4zOTkgMTI4IDUxLjU1NlptMCAwIi8+PC9zdmc+DQo=)
 
 A C++ OpenGL renderer with three demo scenes, multiple shading models, light types and day/night skyboxes.
 
