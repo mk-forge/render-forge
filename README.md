@@ -13,8 +13,7 @@ RenderForge is a custom C++ OpenGL renderer I built as a project for my computer
 ## Tech stack
 
 - **Languages:** C++, GLSL
-- **API:** OpenGL
-- **Libraries:** GLFW, GLEW, GLM, Assimp, SOIL, stb_image
+- **Libraries:** OpenGL, GLFW, GLEW, GLM, Assimp, SOIL, stb_image
 - **Linter:** SonarQube
 
 ## Features
